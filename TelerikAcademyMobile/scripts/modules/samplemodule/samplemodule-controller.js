@@ -12,10 +12,10 @@ define(function (require) {
 		init: function() {
 		
 		},
-		
-		sampleFunction: function() {
-			alert("gosho");
-		}
+        
+        loadModule: function() {
+            
+        }
 	});
 	
 	var sampleModule = new SampleModule();

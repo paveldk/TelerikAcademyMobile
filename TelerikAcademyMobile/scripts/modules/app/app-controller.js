@@ -5,15 +5,19 @@ define(function (require) {
 		init: function() {
 			var that = this;
 			
-			that.app = new kendo.mobile.Application(document.body);
-            
-            this.sampleModuleLoad();
+			that.app = new kendo.mobile.Application(document.body, { useNativeScrolling: true });
 		},
         
         sampleModuleLoad: function() {
             
             require(["modules/samplemodule/samplemodule-controller"], function(sampleController) {
-				sampleController.sampleFunction();
+				sampleController.loadModule();
+			});
+        },
+        
+        newsModuleLoad: function() {
+            require(["modules/news/news-controller"], function(newsController) {
+				newsController.loadNews();
 			});
         }
 	});
