@@ -4,8 +4,8 @@ define(function (require) {
         
 		init: function() {
 			var that = this;
-			
-			that.app = new kendo.mobile.Application(document.body, { useNativeScrolling: true });
+            
+			that.app = new kendo.mobile.Application(document.body, { layout: "main-layout", useNativeScrolling: true });
 		},
         
         sampleModuleLoad: function() {
@@ -15,11 +15,16 @@ define(function (require) {
 			});
         },
         
-        newsModuleLoad: function(e) {
+        dashboardLoad: function() {
+            
+        },
+        
+        newsModuleLoad: function() {
             var that = this;
             
+            appController.app.showLoading();
             require(["modules/news/news-controller"], function(newsController) {
-                appController.newsViewModel = newsController;
+                newsController.loadNewsList();
 			});
         }
 	});

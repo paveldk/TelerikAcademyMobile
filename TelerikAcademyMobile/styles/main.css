@@ -12,6 +12,14 @@ h3
     font-size: 1rem;
     text-align: center;
 }
+#header
+{
+    height: 40px;
+}
+#header>div
+{
+    height: 100%;
+}
 #app-drawer
 {
     width: 85%;

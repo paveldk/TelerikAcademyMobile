@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vibsify - Feel The City Vibe</title>
+        <title>Telerik Academy Mobile</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="scripts/noamd/kendo/styles/kendo.mobile.all.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -11,14 +11,19 @@
 		<script data-main="scripts/require.config" src="scripts/noamd/require/require.js"></script>
     </head>
     
-    <body id="friendsApp">
-        <section data-role="layout" data-id="default">
-            <!--View content will render here-->
+    <body>
+        <section data-role="layout" data-id="main-layout">
+            <div id="header" data-role="header">
+                <div data-role="navbar">
+                    <a href="#app-drawer" data-role="button" data-rel="drawer" data-role="button" data-icon="drawer" data-align="left"></a>
+                    <span data-role="view-title">Telerik Academy Mobile</span>
+                </div>
+            </div>
         </section>
         
         <!--WELCOME VIEW -->
         <div data-role="view">
-            <a href="#app-drawer" data-rel="drawer" data-role="button">Foo</a>
+           
         </div>
         
         <div data-role="drawer" id="app-drawer">
@@ -30,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a data-transition="none">
+                    <a data-transition="none" href="scripts/modules/dashboard/dashboard-view.html">
                         <h3>Dashboard</h3>
                     </a>
                 </li>

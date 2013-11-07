@@ -1,7 +1,8 @@
-<div data-role="view" data-init="appController.newsModuleLoad" data-model="appController.newsViewModel">
-    <ul id="list" data-role="listview" data-template="newsTemplate" data-source="dataSource"></ul>
+<div data-role="view" data-show="appController.newsModuleLoad">
+    <ul id="newsList"></ul>
 </div>
 
 <script id="newsTemplate" type="text/x-kendo-template">
-    <p>#: topic # <span>Age: #: details #</span></p>
+    <img src="https://api.everlive.com/v1/6NF0HIgRaSAoFCd2/Files/#: Picture #/Download">
+    <p>#: Topic # <span>#: Details #</span></p>
 </script>
