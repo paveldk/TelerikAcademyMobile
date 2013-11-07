@@ -1,6 +1,5 @@
 define(function (require) {
 	var appServices = require("modules/app/app-services");
-	require("noamd/kendo/js/kendo.core.min")
 	
 	var SampleServices = kendo.Class.extend({
 		_type: "Vibes",
