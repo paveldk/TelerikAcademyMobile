@@ -1,6 +1,5 @@
 define(function (require) {
-	var sampleModuleServices = require("modules/samplemodule/samplemodule-services");
-	require("noamd/kendo/js/kendo.core.min")
+	require("text!modules/samplemodule/samplemodule-css.css")
 	
 	var SampleModule = kendo.Class.extend({
 		prop: null,
