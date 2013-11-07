@@ -1,3 +1,7 @@
-<div data-role="view" data-init="app.newsModuleLoad">
-    <h3>Sample Module</h3>    
+<div data-role="view" data-init="appController.newsModuleLoad" data-model="appController.newsViewModel">
+    <ul id="list" data-role="listview" data-template="newsTemplate" data-source="dataSource"></ul>
 </div>
+
+<script id="newsTemplate" type="text/x-kendo-template">
+    <p>#: topic # <span>Age: #: details #</span></p>
+</script>

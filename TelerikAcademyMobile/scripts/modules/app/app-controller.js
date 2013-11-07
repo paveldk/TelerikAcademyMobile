@@ -1,7 +1,7 @@
 define(function (require) {
 	
 	var AppController = kendo.Class.extend({
-		
+        
 		init: function() {
 			var that = this;
 			
@@ -15,13 +15,15 @@ define(function (require) {
 			});
         },
         
-        newsModuleLoad: function() {
+        newsModuleLoad: function(e) {
+            var that = this;
+            
             require(["modules/news/news-controller"], function(newsController) {
-				newsController.loadNews();
+                appController.newsViewModel = newsController;
 			});
         }
 	});
 	
 	var appController = new AppController();
-    window.app = appController;
+    window.appController = appController;
 });
