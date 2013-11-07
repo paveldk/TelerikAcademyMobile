@@ -7,7 +7,6 @@ define(function (require) {
 			var that = this;
 			
 			that.app = new kendo.mobile.Application(document.body);
-			that.loadVibes();
 		},
 	});
 	
