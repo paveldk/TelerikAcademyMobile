@@ -1,5 +1,4 @@
 define(function (require) {
-	require("noamd/everlive/everlive.all");
 	
 	var AppServices = kendo.Class.extend({
 		settings: {

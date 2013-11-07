@@ -1,5 +1,4 @@
 define(function (require) {
-	require("noamd/kendo/js/kendo.mobile.application.min");
 	
 	var AppController = kendo.Class.extend({
 		
@@ -11,4 +10,5 @@ define(function (require) {
 	});
 	
 	var appController = new AppController();
+    window.app = appController;
 });

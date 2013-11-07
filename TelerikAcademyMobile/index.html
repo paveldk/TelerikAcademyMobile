@@ -3,7 +3,10 @@
     <head>
         <title>Vibsify - Feel The City Vibe</title>
         <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="scripts/noamd/kendo/styles/kendo.mobile.all.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
 		<script src="scripts/noamd/jquery/jquery.2.0.3.js"></script>
+		<script src="scripts/noamd/kendo/js/kendo.mobile.min.all.js"></script>
         <script src="scripts/noamd/everlive/everlive.all.js"></script>
 		<script data-main="scripts/require.config" src="scripts/noamd/require/require.js"></script>
     </head>
@@ -14,8 +17,42 @@
         </section>
         
         <!--WELCOME VIEW -->
-        <div data-role="view" id="welcome" data-layout="default">
-            <h1>Vibsify</h1>
+        <div data-role="view">
+            <a href="#app-drawer" data-rel="drawer" data-role="button">Foo</a>
+        </div>
+        
+        <div data-role="drawer" id="app-drawer">
+            <ul data-role="listview">
+                <li>
+                    <a data-transition="none">
+                        <h3>Dashboard</h3>
+                    </a>
+                </li>
+                <li>
+                    <a data-transition="none">
+                        <h3>All Courses</h3>
+                        <p>48 upcoming, 3 new, 418 videos, 29 slide decks</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-transition="none">
+                        <h3>My Calendar</h3>
+                        <p>Check out what's coming, your homework deadlines and course schedule</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-transition="none">
+                        <h3>What's new and hot</h3>
+                        <p>Find more about newly - added resourses, upcoming competitions</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-transition="none">
+                        <h3>Trainers</h3>
+                        <p>Learn more about Telerik Academy Lectors and their extensive experience</p>
+                    </a>
+                </li>
+            </ul>
         </div>
         
     </body>
