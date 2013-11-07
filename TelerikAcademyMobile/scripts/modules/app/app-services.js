@@ -3,7 +3,7 @@ define(function (require) {
 	
 	var AppServices = kendo.Class.extend({
 		settings: {
-			apiKey: "iDq9Qwh51MxcoqU9"
+			apiKey: "6NF0HIgRaSAoFCd2"
 		},
 		
 		init: function() {
