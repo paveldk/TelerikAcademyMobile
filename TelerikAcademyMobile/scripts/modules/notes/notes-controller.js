@@ -1,6 +1,5 @@
 define(function (require) {
     var notesServices = require("modules/notes/notes-services");
-	require("text!modules/notes/notes-css.css")
 	
 	var NotesModule = kendo.Class.extend({
         

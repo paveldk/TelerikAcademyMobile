@@ -1,6 +1,5 @@
 define(function (require) {
     var newsServices = require("modules/news/news-services");
-	require("text!modules/samplemodule/samplemodule-css.css")
 	
 	var NewsModule = kendo.Class.extend({
         

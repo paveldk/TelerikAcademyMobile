@@ -1,6 +1,5 @@
 define(function (require) {
     var trainersServices = require("modules/trainers/trainers-services");
-	require("text!modules/trainers/trainers-css.css")
 	
 	var TrainersModule = kendo.Class.extend({
         
