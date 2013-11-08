@@ -1,0 +1,10 @@
+<div data-role="view" data-show="appController.homeworkModuleLoad">
+    <h3>Homework</h3>
+    <ul id="homeworkList" class="list"></ul>
+</div>
+
+<script id="homeworkTemplate" type="text/x-kendo-template">
+    <h3>#: Text #</h3>
+    <p class="small">Topic: <strong>#: Topic#</strong>, due by: #: kendo.toString(Deadline, "yyyy/MM/dd HH:mm")#</p>
+    <div class="clear"></div>
+</script>
