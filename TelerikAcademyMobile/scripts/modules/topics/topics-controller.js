@@ -1,6 +1,5 @@
 define(function (require) {
     var topicsService = require("modules/topics/topics-services");
-	require("text!modules/samplemodule/samplemodule-css.css")
 	
 	var TopicsModule = kendo.Class.extend({
         
@@ -29,7 +28,8 @@ define(function (require) {
                     
             that.$topicsList = $("#topicsList").kendoMobileListView({
                 dataSource: data,
-                template: templateContent
+                template: templateContent,
+                click: $.proxy(that.onTopicSelected,that)
             });
             appController.app.hideLoading();
         },       
@@ -40,6 +40,17 @@ define(function (require) {
             that.$topicsList.data("kendoMobileListView").dataSource.data(data);
             appController.app.hideLoading();
         },
+        
+        onTopicSelected:function(e){
+            var that = this,
+                item = e.sender.dataSource.getByUid(e.item.data("uid"));
+            
+            require(["modules/topics/topic-controller"], function(topicController) {
+                appController.app.navigate("scripts/modules/topics/topic-view.html");
+                topicController.loadTopicView(item.Id);
+                
+            })
+        }
 	});
 	
 	var topicsModule = new TopicsModule();

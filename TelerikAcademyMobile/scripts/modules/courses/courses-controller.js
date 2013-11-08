@@ -1,7 +1,5 @@
 define(function (require) {
     var courseService = require("modules/courses/courses-services");
-    
-	require("text!modules/samplemodule/samplemodule-css.css")
 	
 	var CoursesModule = kendo.Class.extend({
         
@@ -50,7 +48,7 @@ define(function (require) {
             
             require(["modules/topics/topics-controller"], function(topicsController) {
                 topicsController.loadTopicsList(item.Topics);
-                appController.app.navigate("scripts/modules/topics/topics-view.html")
+                appController.app.navigate("scripts/modules/topics/topics-view.html");
 			});
         }
 	});
