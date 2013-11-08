@@ -53,6 +53,15 @@ define(function (require) {
             require(["modules/courses/courses-controller"], function(coursesController) {
                 coursesController.loadCoursesList();
 			});
+        },
+        
+        calendarLoad:function(){
+             var that = this;
+            
+            appController.app.showLoading();
+            require(["modules/calendar/calendar-controller"], function(calendarController) {
+                calendarController.loadCalendar();
+			});
         }
 	});
 	
