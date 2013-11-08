@@ -10,6 +10,9 @@ define(function (require) {
             
             topicsService.getTopic(topicId)
             .done(function(data) {
+                var templateHtml = $("#topicDetailsTemplate").html();
+                var template = kendo.template(templateHtml);
+                $("#topicDetails").html(template(data[0]));
                 url = "https://api.everlive.com/v1/6NF0HIgRaSAoFCd2/Files/" + data[0].Video + "/Download";
                 video.setAttribute("src", url);
             })

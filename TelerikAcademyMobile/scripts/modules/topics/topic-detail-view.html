@@ -1,0 +1,17 @@
+<div data-role="view">
+    <div id="topicDetails"></div>
+    
+    <div>
+        <img src="http://cdn.slidesharecdn.com/ss_thumbnails/about-telerik-academy-montana-2012-120624134740-phpapp02-thumbnail.jpg?1340564054"/>
+        <button id="download">Download</button>
+        <button id="play">Play</button>
+        <button id="viewPresentation">View Presentation</button>
+    </div>
+</div>
+
+<script id="topicDetailsTemplate" type="text/x-kendo-template">
+    <div>#: data.Title # </div>
+    <div>Description: #: data.Description #</div>
+    <div>Duration: #: data.Duration #</div>
+    <div>Date:#: data.Date#</div>
+</script>

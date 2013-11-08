@@ -46,8 +46,9 @@ define(function (require) {
             var that = this,
                 item = e.sender.dataSource.getByUid(e.item.data("uid"));
             
+              appController.app.navigate("scripts/modules/topics/topic-detail-view.html");
             require(["modules/topics/topic-controller"], function(topicController) {
-                appController.app.navigate("scripts/modules/topics/topic-view.html");
+              
                 topicController.loadTopicView(item.Id);
                 
             })
