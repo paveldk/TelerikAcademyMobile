@@ -80,9 +80,30 @@ label
     clear: both;
 }
 
+.distance-right
+{
+    margin-right: 20px;
+}
+.distance-right-s
+{
+    margin-right: 10px;
+}
 .distance
 {
     margin: 10px 5px;
+}
+.grey
+{
+    margin: 0 !important;
+    padding: 5px;
+    background-color: #f5f7f8;
+}
+.light
+{
+    margin: 0 !important;
+    padding: 5px;
+    color: #3d98d7;
+    background-color: #ebf5fb;
 }
 .datetime
 {
@@ -93,9 +114,7 @@ label
     border: 2px solid #dbe3e4;
     height: 100px;
     z-index: 999;
-    background-color: #ddd;
-    position: absolute;
-    bottom: 0;
+    background-color: #fff;
 }
 .small
 {
@@ -103,17 +122,16 @@ label
 }
 .list h4
 {
-    font-size: 1.3rem;
-    line-height: 40px;
+    font-size: 1.1rem;
+    line-height: 38px;
 }
 .km-flat .list li
 {
     border-bottom: 2px solid #dbe3e4;
 }
-.list li:nth-child(2n)
+span.right
 {
-    background-color: #a0ffeb;
-    border-bottom: 2px solid #159f85;
+    color: #3789c2;
 }
 
 #header
@@ -130,18 +148,24 @@ label
 }
 .km-view-title
 {
+    font-size: 1rem;
+    font-weight: bold;
     color: #fff;
     padding-left: 25px;
 }
-
-.number-info
+.title-holder
 {
-    background-color: #54cdb4;
+    margin-left: 60px;
+}
+
+span.number-info
+{
+    background-color: #97c7e7;
     display: block;
     text-align: center;
     padding: 5px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 30px;
     line-height: 20px;
     border-radius: 15px;

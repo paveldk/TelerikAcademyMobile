@@ -28,19 +28,24 @@ define(function (require) {
                 dataSource: [
                     {
                       id: 1, 
-                      start: new Date("2013/11/10 00:00 AM"), 
-                      end: new Date("2013/11/10 00:00 AM"), 
+                      start: new Date("2013/11/10 00:00"), 
+                      end: new Date("2013/11/10 00:00"), 
                       title: "Deadline - Into C# homework" 
                     }, {
                       id: 2, 
-                      start: new Date("2013/11/11 20:00 AM"), 
-                      end: new Date("2013/11/11 23:00 AM"), 
-                      title: "Start - Advanced Javascript" 
+                      start: new Date("2013/11/11 20:00"), 
+                      end: new Date("2013/11/11 23:00"), 
+                      title: "Javascript - Start" 
                     }, {
                       id: 3, 
-                      start: new Date("2013/11/12 20:00 AM"), 
-                      end: new Date("2013/11/12 23:00 AM"), 
-                      title: "Start - Advanced Javascript" 
+                      start: new Date("2013/11/12 20:00"), 
+                      end: new Date("2013/11/12 23:00"), 
+                      title: "SQL - End" 
+                    }, {
+                      id: 4, 
+                      start: new Date("2013/11/12 16:00"), 
+                      end: new Date("2013/11/12 20:00"), 
+                      title: "Test - HTML" 
                     }
                   ]
             });
