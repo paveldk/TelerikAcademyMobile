@@ -17,15 +17,32 @@ define(function (require) {
             });
             
             $("#scheduler").kendoScheduler({
-                date: new Date("2013/6/13"),
-                startTime: new Date("2013/6/13 07:00 AM"),
-                height: 600,
+                date: new Date(),
+                startTime: new Date(),
                 editable: false,
                 views: [
                     { type: "month", selected: true },
                     "agenda"
                 ],
-                timezone: "Etc/UTC"
+                timezone: "Etc/UTC",
+                dataSource: [
+                    {
+                      id: 1, 
+                      start: new Date("2013/11/10 00:00 AM"), 
+                      end: new Date("2013/11/10 00:00 AM"), 
+                      title: "Deadline - Into C# homework" 
+                    }, {
+                      id: 2, 
+                      start: new Date("2013/11/11 20:00 AM"), 
+                      end: new Date("2013/11/11 23:00 AM"), 
+                      title: "Start - Advanced Javascript" 
+                    }, {
+                      id: 3, 
+                      start: new Date("2013/11/12 20:00 AM"), 
+                      end: new Date("2013/11/12 23:00 AM"), 
+                      title: "Start - Advanced Javascript" 
+                    }
+                  ]
             });
             appController.app.hideLoading();
         }
