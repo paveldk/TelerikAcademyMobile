@@ -78,6 +78,13 @@ define(function (require) {
             require(["modules/presentation/presentation-controller"], function(presentationController) {
                  presentationController.loadPresentation();
             });
+        },
+
+        showTopicView:function(){
+            var that = this,
+                video = document.getElementById("media");
+            
+            video.setAttribute("src", appController.url);
         }
 	});
 	

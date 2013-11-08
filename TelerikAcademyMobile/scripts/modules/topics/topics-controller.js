@@ -48,9 +48,7 @@ define(function (require) {
             
               appController.app.navigate("scripts/modules/topics/topic-detail-view.html");
             require(["modules/topics/topic-controller"], function(topicController) {
-              
                 topicController.loadTopicView(item.Id);
-                
             })
         }
 	});
