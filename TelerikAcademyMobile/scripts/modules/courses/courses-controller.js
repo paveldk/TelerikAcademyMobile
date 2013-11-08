@@ -45,10 +45,12 @@ define(function (require) {
         initTopics:function(e){
             var that = this,
                 item = e.sender.dataSource.getByUid(e.item.data("uid"));
-            
+             appController.app.navigate("scripts/modules/courses/course-detail-view.html");
             require(["modules/topics/topics-controller"], function(topicsController) {
                 topicsController.loadTopicsList(item.Topics);
-                appController.app.navigate("scripts/modules/topics/topics-view.html");
+                var templateHtml = $("#detailsTemplate").html();
+                var template = kendo.template(templateHtml);
+                $("#details").html(template(item));
 			});
         }
 	});

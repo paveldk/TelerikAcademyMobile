@@ -28,6 +28,7 @@ define(function (require) {
                     
             that.$topicsList = $("#topicsList").kendoMobileListView({
                 dataSource: data,
+                style: "inset",
                 template: templateContent,
                 click: $.proxy(that.onTopicSelected,that)
             });

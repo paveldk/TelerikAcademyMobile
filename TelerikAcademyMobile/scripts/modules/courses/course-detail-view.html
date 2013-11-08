@@ -1,0 +1,15 @@
+<div data-role="view">
+    <div id="details"></div>
+    <ul id="topicsList"></ul>
+</div>
+
+<script id="detailsTemplate" type="text/x-kendo-template">
+    <div>#: data.Title # </div>
+    <div>Start date: #: data.StartDate #</div>
+    <div>End date: #: data.EndDate #</div>
+    <div>Singn up before:#: data.SignUpDate#</div>
+</script>
+
+<script id="topicsTemplate" type="text/x-kendo-template">
+    <p>#: Title # <span>#: Description + " Topics"#</span></p>
+</script>
