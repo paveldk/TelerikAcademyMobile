@@ -1,0 +1,64 @@
+.presentation-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    z-index: 0;
+}
+
+html, body, .km-view, .km-content {
+    height: 100% !important;
+}
+
+.presentation-background img {
+    width: 100%;
+    height: 100%;
+}
+
+.reveal .slides section {
+    color: #faf8c8;
+    z-index: 1;
+}
+
+.reveal .slides h1 {
+    color: #d4ff5b;
+    text-transform: none;
+    font-family: Verdana;
+    text-shadow: none;
+}
+
+.reveal .slides h2 {
+    text-transform: none;
+    font-family: Verdana;
+    color: #d4ff5b;
+}
+
+.reveal .slides h1,
+.reveal .slides h2 {
+    font-size: 1.7em;
+}
+
+@media (max-width: 960px) {
+    .reveal {
+        font-size: 20px;
+    }
+}
+
+.reveal .slides .vcard {
+    font-size: 70%;
+    margin-top: 3em;
+}
+
+.reveal .slides .vcard .title {
+    color: #d4ff5b;
+}
+
+.reveal .slides .vcard a {
+    color: #9b0;
+}
+
+.reveal .slides .definition {
+    font-size: 90%;
+    font-style: italic;
+}

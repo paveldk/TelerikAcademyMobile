@@ -62,6 +62,13 @@ define(function (require) {
             require(["modules/calendar/calendar-controller"], function(calendarController) {
                 calendarController.loadCalendar();
 			});
+		},
+		
+        presentationModuleLoad: function() {
+            appController.app.showLoading();
+            require(["modules/presentation/presentation-controller"], function(presentationController) {
+                 presentationController.loadPresentation();
+            });
         }
 	});
 	
