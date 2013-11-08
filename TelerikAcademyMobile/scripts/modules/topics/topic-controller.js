@@ -10,7 +10,6 @@ define(function (require) {
                 presentationBtn = $("#viewPresentation");
             
             presentationBtn.on("click", function() {
-                debugger;
                 appController.app.navigate("scripts/modules/presentation/presentation-view.html");
             });
             
