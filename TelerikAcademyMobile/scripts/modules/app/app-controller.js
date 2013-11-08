@@ -5,7 +5,7 @@ define(function (require) {
 		init: function() {
 			var that = this;
             
-			that.app = new kendo.mobile.Application(document.body, { layout: "main-layout", useNativeScrolling: true });
+			that.app = new kendo.mobile.Application(document.body, { skin: "flat", layout: "main-layout", useNativeScrolling: true });
 		},
         
         sampleModuleLoad: function() {
@@ -25,6 +25,15 @@ define(function (require) {
             appController.app.showLoading();
             require(["modules/news/news-controller"], function(newsController) {
                 newsController.loadNewsList();
+			});
+        },
+        
+        trainersModuleLoad: function() {
+            var that = this;
+            
+            appController.app.showLoading();
+            require(["modules/trainers/trainers-controller"], function(trainersController) {
+                trainersController.loadTrainersList();
 			});
         }
 	});

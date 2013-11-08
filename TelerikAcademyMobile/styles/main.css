@@ -3,30 +3,133 @@
     margin: 0;
     padding: 0;
 }
-body
+.km-flat .km-content
 {
+    margin-top: 10px;
     font-size: 10px;
+}
+.km-scroll-container
+{
+    background-color: #f0f0f0;
+}
+.km-flat .km-scroll-wrapper
+{
+    background-color: #fff;
+    border-right: 3px solid #dbe3e4;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.km-flat .km-scroll-wrapper input
+{
+    padding: 3px;
+    width: 95%;
+    margin: 5px auto;
+    display: block;
+}
+.km-scroll-wrapper, .km-scroll-container
+{
+    height: 100%;
+}
+
+
+img
+{
+    border: 0;
+    margin: 5px;
+}
+p
+{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+h1
+{
+    text-align: center;
+    margin: 10px 0;
 }
 h3
 {
     font-size: 1rem;
     text-align: center;
 }
+
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+.clear
+{
+    clear: both;
+}
+
+.datetime
+{
+    font-size: .8rem;
+}
+.message
+{
+    border: 2px solid #dbe3e4;
+    height: 100px;
+    z-index: 999;
+    background-color: #ddd;
+    position: absolute;
+    bottom: 0;
+}
+
 #header
 {
     height: 40px;
 }
-#header>div
+#header.km-navbar
 {
     height: 100%;
 }
+#header .km-navbar 
+{
+    background-color: #2d3e50;
+}
+.km-view-title
+{
+    color: #fff;
+}
+
+.list h4
+{
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+.number-info
+{
+    border-bottom: 1px solid #159f85;
+    background-color: #54cdb4;
+    display: block;
+    text-align: center;
+    width: 60px;
+    padding: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 30px;
+}
+
 #app-drawer
 {
     width: 85%;
 }
 #app-drawer p
 {
-    font-size: 0.8rem;
     text-align: center;
-    line-height: 1rem;
+}
+
+#newsList li
+{
+    border: 2px solid #dbe3e4;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(219, 227, 228, 0.5);
 }

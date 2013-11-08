@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
 		<script src="scripts/noamd/jquery/jquery.2.0.3.js"></script>
 		<script src="scripts/noamd/kendo/js/kendo.mobile.min.all.js"></script>
+		<script src="scripts/noamd/kendo/js/kendo.all.min.js"></script>
         <script src="scripts/noamd/everlive/everlive.all.js"></script>
 		<script data-main="scripts/require.config" src="scripts/noamd/require/require.js"></script>
     </head>
@@ -23,7 +24,33 @@
         
         <!--WELCOME VIEW -->
         <div data-role="view">
-           
+            <h2>Hey Steve, welcome back</h2>
+            <h1>Dashboard</h1>
+            <ul data-role="listview" class="list">
+                <li>
+                    <h4>Achiement Points<span class="number-info right">200</span></h4>
+                </li>
+                <li>
+                    <a href="" data-role="listview-link"><h4>Active Courses<span class="number-info right">2</span></h4></a>
+                </li>
+                <li>
+                    <a href="" data-role="listview-link"><h4>Pending Homeworks<span class="number-info right">3</span></h4></a>
+                </li>
+                <li>
+                    <a href="" data-role="listview-link"><h4>Pending Videos<span class="number-info right">11</span></h4></a>
+                </li>
+                <li>
+                    <a href="" data-role="listview-link"><h4>Downloaded Videos<span class="number-info right">3</span></h4></a>
+                </li>
+                <li>
+                    <a href="" data-role="listview-link"><h4>Forum Updates<span class="number-info right">133</span></h4></a>
+                </li>
+            </ul>
+            <div class="message">
+                <h3>From our trainers:</h3>
+                <p><strong>Student: </strong>How was that thing called, was it recursion?</p>
+                <p><strong>Trainer:</strong> No, my name is Doncho.</p>
+            </div>
         </div>
         
         <div data-role="drawer" id="app-drawer">
@@ -46,7 +73,7 @@
                     </a>
                 </li>
                 <li>
-                    <a data-transition="none">
+                    <a data-transition="none" href="scripts/modules/calendar/calendar-view.html">
                         <h3>My Calendar</h3>
                         <p>Check out what's coming, your homework deadlines and course schedule</p>
                     </a>
@@ -58,9 +85,15 @@
                     </a>
                 </li>
                 <li>
-                    <a data-transition="none">
+                    <a data-transition="none" href="scripts/modules/trainers/trainers-view.html">
                         <h3>Trainers</h3>
-                        <p>Learn more about Telerik Academy Lectors and their extensive experience</p>
+                        <p>Learn more about Telerik Academy Trainers and their extensive experience</p>
+                    </a>
+                </li>
+                <li>
+                    <a data-transition="none">
+                        <h3>Forum</h3>
+                        <p>Check out the latest discussions. Help your collegues</p>
                     </a>
                 </li>
             </ul>

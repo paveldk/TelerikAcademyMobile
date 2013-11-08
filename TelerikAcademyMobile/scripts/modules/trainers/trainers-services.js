@@ -1,14 +1,14 @@
 define(function (require) {
 	var appServices = require("modules/app/app-services");
 	
-	var NewsServices = kendo.Class.extend({
-		_type: "News",
+	var TrainersServices = kendo.Class.extend({
+		_type: "Trainers",
 		
 		init: function() {
 		
 		},
 		
-		getAllNews: function() {
+		getAllTrainers: function() {
 			var that = this,
 				allNews = appServices.everlive.data(that._type),
                 d = new $.Deferred();
@@ -25,6 +25,6 @@ define(function (require) {
 		}
 	});
 	
-	var newsServices = new NewsServices();
-	return newsServices;
+	var trainersServices = new TrainersServices();
+	return trainersServices;
 });

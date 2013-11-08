@@ -1,7 +1,7 @@
 define(function (require) {
 	var appServices = require("modules/app/app-services");
 	
-	var NewsServices = kendo.Class.extend({
+	var SampleServices = kendo.Class.extend({
 		_type: "News",
 		
 		init: function() {
@@ -25,6 +25,6 @@ define(function (require) {
 		}
 	});
 	
-	var newsServices = new NewsServices();
-	return newsServices;
+	var sampleServices = new SampleServices();
+	return sampleServices;
 });
