@@ -44,6 +44,15 @@ define(function (require) {
             require(["modules/notes/notes-controller"], function(trainersController) {
                 trainersController.loadNotesList();
 			});
+		},
+		
+        coursesModuleLoad: function(){
+            var that = this;
+            
+            appController.app.showLoading();
+            require(["modules/courses/courses-controller"], function(coursesController) {
+                coursesController.loadCoursesList();
+			});
         }
 	});
 	
