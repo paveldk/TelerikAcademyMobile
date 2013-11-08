@@ -37,6 +37,15 @@ define(function (require) {
 			});
         },
         
+        homeworkModuleLoad: function() {
+            var that = this;
+            
+            appController.app.showLoading();
+            require(["modules/homework/homework-controller"], function(homeworkController) {
+                homeworkController.loadHomeworkList();
+			});
+        },
+        
         notesModuleLoad: function() {
             var that = this;
             
