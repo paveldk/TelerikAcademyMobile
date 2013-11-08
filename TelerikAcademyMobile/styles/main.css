@@ -19,18 +19,27 @@
     margin-top: 0;
     padding-top: 5px;
 }
-.km-flat .km-scroll-wrapper input
+.km-flat .km-scroll-wrapper input[type="text"]
 {
-    padding: 3px;
+    padding: 5px;
     width: 95%;
     margin: 5px auto;
     display: block;
+    border-radius: 5px;
 }
 .km-scroll-wrapper, .km-scroll-container
 {
     height: 100%;
 }
-
+.tam-view .button-wrap
+{
+    text-align: center;      
+}
+.km-flat .km-button
+{
+    font-size: 1rem;
+    margin: 5px;
+}
 
 img
 {
@@ -52,6 +61,11 @@ h3
     font-size: 1rem;
     text-align: center;
 }
+label
+{
+    font-size: 1rem;
+    margin: 5px;
+}
 
 .left
 {
@@ -66,6 +80,10 @@ h3
     clear: both;
 }
 
+.distance
+{
+    margin: 10px 5px;
+}
 .datetime
 {
     font-size: .8rem;
@@ -78,6 +96,24 @@ h3
     background-color: #ddd;
     position: absolute;
     bottom: 0;
+}
+.small
+{
+    font-size: .8rem;
+}
+.list h4
+{
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+.km-flat .list li
+{
+    border-bottom: 2px solid #dbe3e4;
+}
+.list li:nth-child(2n)
+{
+    background-color: #a0ffeb;
+    border-bottom: 2px solid #159f85;
 }
 
 #header
@@ -95,25 +131,20 @@ h3
 .km-view-title
 {
     color: #fff;
+    padding-left: 25px;
 }
 
-.list h4
-{
-    font-size: 1.3rem;
-    line-height: 40px;
-}
 .number-info
 {
-    border-bottom: 1px solid #159f85;
     background-color: #54cdb4;
     display: block;
     text-align: center;
-    width: 60px;
     padding: 5px;
     color: #fff;
     font-size: 1.2rem;
-    height: 40px;
-    line-height: 30px;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 15px;
 }
 
 #app-drawer

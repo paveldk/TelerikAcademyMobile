@@ -1,0 +1,41 @@
+<div data-role="view" class="tam-view" data-show="appController.notesModuleLoad">
+    <div class="button-wrap">
+        <a href="#addNote" data-rel="modalview" data-role="button" data-icon="add">New Note</a>
+    </div>
+    <ul id="notesList" class="list"></ul>
+</div>
+
+<div data-role="modalview" id="addNote" data-width="300" data-height="170">
+    <h3>Add Note</h3>
+    <label for="noteText">Text</label>
+    <input type="text" id="noteText" />
+    <p class="distance">
+        <input type="checkbox" id="notePrivate" />  
+        <label for="notePrivate">Private</label>          
+    </p>
+    <a data-role="button"  data-click="appController.addNewNote">Add</a>
+    <a data-role="button"  data-click="closeModal">Close</a>
+</div>
+
+<script id="notesTemplate" type="text/x-kendo-template">
+    #if(Topic){# 
+        # var minutes = Math.floor(TopicTime / 60), seconds = TopicTime - minutes * 60; #
+        <h3>#: Topic # @ #: minutes #:#: seconds #</h3>
+    #}#
+    #if(IsPrivate){#
+        <img src="../" width="20" height="20" class="left" />
+    #}else{#
+        <img src="../" width="20" height="20" class="left" />
+    #}#
+    <p>22/11/2013 13:55</p>
+    <span>#: Text #</span>
+    
+    <div class="clear"></div>
+    
+</script>
+
+<script>
+function closeModal() {
+   $("#addNote").data("kendoMobileModalView").close();
+}   
+</script>
