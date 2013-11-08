@@ -1,7 +1,12 @@
 <div data-role="view" data-show="appController.coursesModuleLoad">
+    <h3 class="light">Courses</h3>
     <ul id="coursesList"></ul>
 </div>
 
 <script id="courseTemplate" type="text/x-kendo-template">
-    <p>#: Title # <span>#: Topics.length + " Topics"#</span></p>
+    <p>
+        <img src="./img/not-completed.png" width="30" height="30" class="left" />
+        #: Title # <span class="right">#: Topics.length + " Topics"#</span>
+        <div class="clear"></div>
+    </p>
 </script>

@@ -199,3 +199,17 @@ span.number-info
     font-size: .8rem;
     line-height: .8rem;
 }
+
+#coursesList p
+{
+    line-height: 40px;
+}
+.air
+{
+    margin: 3px;
+    line-height: 1.1rem;
+}
+.air .lightColor
+{
+    color: #3789c2
+}

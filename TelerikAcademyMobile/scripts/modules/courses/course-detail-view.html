@@ -1,13 +1,16 @@
 <div data-role="view">
     <div id="details"></div>
+    <h3 class="grey">Topics:</h3>
     <ul id="topicsList"></ul>
 </div>
 
 <script id="detailsTemplate" type="text/x-kendo-template">
-    <div>#: data.Title # </div>
-    <div>Start date: #: data.StartDate #</div>
-    <div>End date: #: data.EndDate #</div>
-    <div>Singn up before:#: data.SignUpDate#</div>
+    <h3 class="light">#: data.Title # </h3>
+    <p class="air">Start date: <span class="lightColor"> #: kendo.toString(data.StartDate, "yyyy/MM/dd") #</span></p>
+    <p class="air">End date: <span class="lightColor"> #: kendo.toString(data.EndDate, "yyyy/MM/dd") # </span></p>
+    <p class="air">Singn up before: <span class="lightColor"> #: kendo.toString(data.SignUpDate, "yyyy/MM/dd") # </span></p>
+    <h3 class="grey">Details:</h3>
+    <p class="air"> #: Description # </p>
 </script>
 
 <script id="topicsTemplate" type="text/x-kendo-template">

@@ -1,17 +1,27 @@
 <div data-role="view">
     <div id="topicDetails"></div>
     
+    <h3 class="grey">Video</h3>
     <div>
         <img src="http://cdn.slidesharecdn.com/ss_thumbnails/about-telerik-academy-montana-2012-120624134740-phpapp02-thumbnail.jpg?1340564054"/>
-        <button id="download">Download</button>
-        <button id="play">Play</button>
-        <button id="viewPresentation">View Presentation</button>
+        <a id="download"><img src="./img/download.png" width="30" height="30" /></a>
+        <a id="play"><img src="./img/play.png" width="30" height="30" /></a>
+        <a id="completedVideo"><img src="./img/completed.png" width="30" height="30" /></a>
+    </div>
+    
+    <h3 class="grey">Presentation</h3>
+    <div>
+        <img src="http://cdn.slidesharecdn.com/ss_thumbnails/about-telerik-academy-montana-2012-120624134740-phpapp02-thumbnail.jpg?1340564054"/>
+        <a id="download"><img src="./img/download.png" width="30" height="30" /></a>
+        <a id="play"><img src="./img/play.png" width="30" height="30" /></a>
     </div>
 </div>
 
 <script id="topicDetailsTemplate" type="text/x-kendo-template">
-    <div>#: data.Title # </div>
-    <div>Description: #: data.Description #</div>
-    <div>Duration: #: data.Duration #</div>
-    <div>Date:#: data.Date#</div>
+    <h3 class="light">#: data.Title # </h3>
+    <p class="air">Date: <span class="lightColor"> #: kendo.toString(data.Date, "yyyy/MM/dd") # </span></p>
+    <p class="air">Duration: <span class="lightColor"> #: data.Duration # mins</span></p>
+    <h3 class="grey">Details:</h3>
+    <p class="air">Description: #: data.Description #</p>
+
 </script>
