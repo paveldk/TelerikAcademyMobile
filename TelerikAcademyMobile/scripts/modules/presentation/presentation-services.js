@@ -20,6 +20,68 @@ define(function (require) {
 		},
         getPresentationData: function() {
             return '<div class="slides">' + 
+ '            <section>' + 
+ '                <h1>Introduction to programming</h1>' + 
+ '                <div class="subH1">Creating and Running Your First C# Program' + 
+ '                </div>' + 
+ '                <div class="vcard">' + 
+ '                    <div class="name">Doncho Minkov</div>' + 
+ '                    <div class="title">Technical Trainer</div>' + 
+ '                    <div><a href="http://academy.telerik.com">http://academy.telerik.com</a></div>' + 
+ '                    <div class="company">Telerik Software Academy</div>' + 
+ '                </div>' + 
+ '            </section>' + 
+ '            <section>' + 
+ '                <h2>Contents</h2>' + 
+ '                <ul>' + 
+ '                    <li>What is Computer Programming?</li>' + 
+ '                    <li>Your First C# Program</li>' + 
+ '                    <li>What is .NET Framework?</li>' + 
+ '                    <li>What is Visual Studio?</li>' + 
+ '                    <li>What is MSDN Library?</li>' + 
+ '                </ul>' + 
+ '            </section>' + 
+ '            <section>' + 
+ '                <h2>Define: Computer programming</h2>' + 
+ '                <p>Computer programming: creating a sequence of instructions<br/> to enable the computer to do something</p>' + 
+ '                <p style="text-align: right; width: 80%;font-size: 80%;font-style: italic;">Definition by Google</p>' + 
+ '            </section>' + 
+ '            <section>' + 
+ '                <h2>Visual Studio</h2>' + 
+ '                <ul>' + 
+ '                    <li>IDE - Integrated Development Environment</li>' + 
+ '                    <li>' + 
+ '                        Development tool that help us:' + 
+ '                        <ul>' + 
+ '                            <li>Write code</li>' + 
+ '                            <li>Design user interface</li>' + 
+ '                            <li>Compile code</li>' + 
+ '                            <li>Execute / test / debug applications</li>' + 
+ '                            <li>Browse the help</li>' + 
+ '                            <li>Manage project\'s files</li>' + 
+ '                        </ul>' + 
+ '                    </li>' + 
+ '                </ul>' + 
+ '            </section>' + 
+ '            <section>' + 
+ '                <h2>Debugging the code</h2>' + 
+ '                <ul>' + 
+ '                    <li>' + 
+ '                        The process of debugging applications includes:' + 
+ '                        <ul>' + 
+ '                            <li>Spotting an error</li>' + 
+ '                            <li>Finding the lines of code that cause the error</li>' + 
+ '                            <li>Fixing the code</li>' + 
+ '                            <li>Testing all is good</li>' + 
+ '                        </ul>' + 
+ '                    </li>' + 
+ '                    <li>Iterative and continuous process</li>' + 
+ '                </ul>' + 
+ '            </section>' + 
+ '        </div>';
+        },
+        getJSAPIPresentation: function() {
+            return '<div class="slides">' + 
   '            <section>' + 
   '                <h1>JavaScript APIs</h1>' + 
  '                <div class="subH1">Canvas, Workers, Web Storage and all the cool stuff</div>' + 

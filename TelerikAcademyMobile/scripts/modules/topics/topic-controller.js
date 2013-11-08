@@ -6,7 +6,12 @@ define(function (require) {
         loadTopicView: function(topicId) {
             var that = this,
                 url,
-                video = document.getElementById("media");
+                video = document.getElementById("media"),
+                presentationBtn = $("#viewPresentation");
+            
+            presentationBtn.on("click", function() {
+                appController.app.navigate("scripts/modules/presentation/presentation-view.html");
+            });
             
             topicsService.getTopic(topicId)
             .done(function(data) {
