@@ -26,6 +26,15 @@ define(function (require) {
             require(["modules/news/news-controller"], function(newsController) {
                 newsController.loadNewsList();
 			});
+        },
+        
+        coursesModuleLoad: function(){
+            var that = this;
+            
+            appController.app.showLoading();
+            require(["modules/courses/courses-controller"], function(coursesController) {
+                coursesController.loadCoursesList();
+			});
         }
 	});
 	
