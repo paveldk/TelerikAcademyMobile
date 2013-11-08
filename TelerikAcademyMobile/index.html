@@ -7,31 +7,19 @@
         <link rel="stylesheet" type="text/css" href="scripts/noamd/kendo/styles/kendo.flat.min.css">
         <link rel="stylesheet" type="text/css" href="scripts/noamd/kendo/styles/kendo.mobile.all.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" type="text/css" href="scripts/noamd/kendo/styles/kendo.mobile.all.min.css" />
-        <link rel="stylesheet" type="text/css" href="styles/main.css" />
-        <link rel="stylesheet" type="text/css" href="scripts/modules/presentation/reveal-js/reveal.min.css" />
-        <link rel="stylesheet" type="text/css" href="scripts/modules/presentation/reveal-js/theme/default.css" />
-        <link rel="stylesheet" type="text/css" href="scripts/modules/presentation/presentation-css.css" />
 		<script src="scripts/noamd/jquery/jquery.2.0.3.js"></script>
 		<script src="scripts/noamd/kendo/js/kendo.all.min.js"></script>
         <script src="scripts/noamd/everlive/everlive.all.js"></script>
 		<script data-main="scripts/require.config" src="scripts/noamd/require/require.js"></script>
-        
-        <script src="scripts/noamd/reveal-js/lib/js/head.min.js"></script>
-        <script src="scripts/noamd/reveal-js/js/reveal.js",></script>
-        <script src="scripts/noamd/reveal-js/lib/js/classList.js"></script>
-        <script src="scripts/noamd/reveal-js/plugin/highlight/highlight.js"></script>
-                     
     </head>
     
     <body>
         <section data-role="layout" data-id="main-layout">
             <div id="header" data-role="header">
                 <div data-role="navbar">
-                    <a href="#app-drawer" data-role="button" data-rel="drawer" data-role="button" data-icon="drawer" data-align="left"><img src="./img/dashes.png" /></a>
+                    <a href="#app-drawer" data-role="button" data-rel="drawer" data-role="button" data-icon="drawer" data-align="left"><img src="./img/dashes.png" width="10" height="12" /></a>
                     <div class="title-holder">
-                        <img src="./img/TAM-logo.png" width="32" height="32" class="left" /><span data-role="view-title">Telerik Academy Mobile</span>
+                        <img src="./img/TAM-logo.png" id="logo" width="32" height="32" class="left" /><span data-role="view-title" class="header-title">Telerik Academy Mobile</span>
                     </div>
                 </div>
             </div>
@@ -69,52 +57,61 @@
         
         <div data-role="drawer" id="app-drawer">
             <input type="text" placeholder="search" />
-            <ul data-role="listview">
+            <ul data-role="listview" id="drawer-list">
                 <li>
                     <a data-transition="none" href="scripts/modules/dashboard/dashboard-view.html">
+                        <img src="./img/dashboard.png" width="30" height="30" class="left" />
                         <h3>Dashboard</h3>
+                        <p>Don't miss any video ot homework deadline</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
                 <li>
                     <a data-transition="none" href="scripts/modules/courses/courses-view.html">
+                        <img src="./img/all-courses.png" width="30" height="30" class="left" />
                         <h3>All Courses</h3>
                         <p>48 upcoming, 3 new, 418 videos, 29 slide decks</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
                 <li>
                     <a data-transition="none" href="scripts/modules/calendar/calendar-view.html">
+                        <img src="./img/calendar.png" width="30" height="30" class="left" />
                         <h3>My Calendar</h3>
                         <p>Check out what's coming, your homework deadlines and course schedule</p>
-                    </a>
-                </li>
-                <li>
-                    <a data-trasition="none" href="scripts/modules/homework/homework-view.html">
-                        <h3>Homework</h3>
-                        <p>Homework and due dates</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
                 <li>
                     <a data-transition="none" href="scripts/modules/notes/notes-view.html">
+                        <img src="./img/notes.png" width="30" height="30" class="left" />
                         <h3>My Notes</h3>
                         <p>2 private, 5 public</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
                 <li>
                     <a data-transition="none" href="scripts/modules/news/news-view.html">
+                        <img src="./img/news.png" width="30" height="30" class="left" />
                         <h3>What's new and hot</h3>
                         <p>Find more about newly - added resourses, upcoming competitions</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
                 <li>
                     <a data-transition="none" href="scripts/modules/trainers/trainers-view.html">
+                        <img src="./img/trainers.png" width="30" height="35" class="left" />
                         <h3>Trainers</h3>
                         <p>Learn more about Telerik Academy Trainers and their extensive experience</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
                 <li>
                     <a data-transition="none">
+                        <img src="./img/forum.png" width="30" height="22" class="left" />
                         <h3>Forum</h3>
                         <p>Check out the latest discussions. Help your collegues</p>
+                        <div class="clear"></div>
                     </a>
                 </li>
             </ul>

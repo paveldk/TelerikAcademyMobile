@@ -8,10 +8,6 @@
     margin-top: 10px;
     font-size: 10px;
 }
-.km-scroll-container
-{
-    background-color: #f0f0f0;
-}
 .km-flat .km-scroll-wrapper
 {
     background-color: #fff;
@@ -153,9 +149,19 @@ span.right
     color: #fff;
     padding-left: 25px;
 }
+.header-title
+{
+    margin-left: -55px;
+}
+#logo
+{
+    margin-top: 5px;
+}
 .title-holder
 {
-    margin-left: 60px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 35px;
 }
 
 span.number-info
@@ -187,4 +193,9 @@ span.number-info
     margin: 5px;
     padding: 5px;
     background-color: rgba(219, 227, 228, 0.5);
+}
+#drawer-list p
+{
+    font-size: .8rem;
+    line-height: .8rem;
 }
